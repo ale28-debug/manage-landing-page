@@ -1,0 +1,9 @@
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 1440px
+);
+
+$sm-breakpoint: map-get($map: $grid-breakpoints, $key: sm);
+$md-breakpoint: map-get($map: $grid-breakpoints, $key: md);

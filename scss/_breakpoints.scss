@@ -1,0 +1,25 @@
+@import 'default/base';
+
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+@import '../bootstrap/scss/grid';
+
+
+
+
+// Schermi minori di 375px, mobile
+@media screen and (max-width: $sm-breakpoint){
+    @import 'sm-down/base';
+}
+
+// Schermi fino a 1440px, tablet
+@media screen and (min-width: $sm-breakpoint) and (max-width: $md-breakpoint){
+    @import 'md-down/base';
+}
+
+// Schermi maggiori di 1440px, desktop
+@media screen and (min-width: $md-breakpoint){
+    @import 'md-up/base';
+}
