@@ -7,3 +7,14 @@ $grid-breakpoints: (
 
 $sm-breakpoint: map-get($map: $grid-breakpoints, $key: sm);
 $md-breakpoint: map-get($map: $grid-breakpoints, $key: md);
+
+// Fonts
+$my-font: 'Be Vietnam', sans-serif;
+
+// Colors
+$primary-1: hsl(12, 88%, 59%);
+$primary-2: hsl(228, 39%, 23%);
+$neutral-1: hsl(227, 12%, 61%);
+$neutral-2: hsl(233, 12%, 13%);
+$neutral-3: hsl(13, 100%, 96%);
+$neutral-4: hsl(0, 0%, 98%);

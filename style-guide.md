@@ -11,15 +11,16 @@ The designs were created to the following widths:
 
 ### Primary
 
-Bright Red: hsl(12, 88%, 59%)
-Dark Blue: hsl(228, 39%, 23%)
+Bright Red: hsl(12, 88%, 59%) --> bottoni, sezione "how your team works today"
+
+Dark Blue: hsl(228, 39%, 23%) --> link, titoli
 
 ### Neutral
 
-Dark Grayish Blue: hsl(227, 12%, 61%)
-Very Dark Blue: hsl(233, 12%, 13%)
-Very Pale Red: hsl(13, 100%, 96%)
-Vary Light Gray: hsl(0, 0%, 98%)
+Dark Grayish Blue: hsl(227, 12%, 61%) --> sottotitoli
+Very Dark Blue: hsl(233, 12%, 13%) --> footer
+Very Pale Red: hsl(13, 100%, 96%) --> card testimoni
+Vary Light Gray: hsl(0, 0%, 98%) --> link footer
 
 ## Typography
 

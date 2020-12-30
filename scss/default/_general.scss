@@ -1,0 +1,39 @@
+/*****************************
+General
+*****************************/
+
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    .btn{
+        margin: auto;
+    }
+}
+
+#navbar{
+    ul{
+        li{
+            a{
+                color: $primary-2;
+                font-family: $my-font;
+            }
+        }
+    }
+}
+
+.btn{
+    font-family: $my-font;
+    color: #fff;
+    background: $primary-1;
+    padding: 10px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 700;
+}
