@@ -666,16 +666,16 @@ header .btn {
 }
 
 @media screen and (min-width: 375px) and (max-width: 1440px) {
-  body {
-    display: none;
+  #navbar {
+    position: relative;
   }
-}
-
-@media screen and (min-width: 1440px) {
   #navbar header {
     display: flex;
     align-items: center;
     padding: 20px;
+  }
+  #navbar header .logo-container {
+    display: flex;
   }
   #navbar ul {
     margin: 0 auto 0 auto;
@@ -687,6 +687,43 @@ header .btn {
   }
   #navbar ul li a {
     text-decoration: none;
+  }
+  #navbar img:nth-child(2) {
+    position: absolute;
+    right: -8em;
+    bottom: -30em;
+    z-index: -2;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #navbar {
+    position: relative;
+  }
+  #navbar header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  #navbar header .logo-container {
+    display: flex;
+  }
+  #navbar ul {
+    margin: 0 auto 0 auto;
+  }
+  #navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+  }
+  #navbar ul li a {
+    text-decoration: none;
+  }
+  #navbar img:nth-child(2) {
+    position: absolute;
+    right: -8em;
+    bottom: -30em;
+    z-index: -2;
   }
 }
 /*# sourceMappingURL=main.css.map */
