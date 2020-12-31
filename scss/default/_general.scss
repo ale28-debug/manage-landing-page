@@ -36,4 +36,18 @@ header{
     border-radius: 40px;
     text-decoration: none;
     font-weight: 700;
+    box-shadow: 5px 5px 5px $primary-1;
+}
+
+h2{
+    color: $primary-2;
+}
+
+h2, p{
+    font-family: $my-font;
+}
+
+p{
+   color: $neutral-1;
+   font-size: 16px;
 }

@@ -27,6 +27,20 @@ header .btn {
   border-radius: 40px;
   text-decoration: none;
   font-weight: 700;
+  box-shadow: 5px 5px 5px #f25f3a;
+}
+
+h2 {
+  color: #242d52;
+}
+
+h2, p {
+  font-family: "Be Vietnam", sans-serif;
+}
+
+p {
+  color: #9095a7;
+  font-size: 16px;
 }
 
 /*****************************
@@ -58,6 +72,20 @@ header .btn {
   border-radius: 40px;
   text-decoration: none;
   font-weight: 700;
+  box-shadow: 5px 5px 5px #f25f3a;
+}
+
+h2 {
+  color: #242d52;
+}
+
+h2, p {
+  font-family: "Be Vietnam", sans-serif;
+}
+
+p {
+  color: #9095a7;
+  font-size: 16px;
 }
 
 .container,
@@ -694,6 +722,22 @@ header .btn {
     bottom: -30em;
     z-index: -2;
   }
+  #bring {
+    padding: 0 0 0 30%;
+    margin: 5% 0 0 0;
+  }
+  #bring .bring {
+    display: flex;
+  }
+  #bring .bring .caption p {
+    margin: 0 0 40px 0;
+  }
+  #bring .bring .image {
+    margin: 0 0 0 20%;
+  }
+  #bring .bring .image img {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -724,6 +768,22 @@ header .btn {
     right: -8em;
     bottom: -30em;
     z-index: -2;
+  }
+  #bring {
+    padding: 0 0 0 30%;
+    margin: 5% 0 0 0;
+  }
+  #bring .bring {
+    display: flex;
+  }
+  #bring .bring .caption p {
+    margin: 0 0 40px 0;
+  }
+  #bring .bring .image {
+    margin: 0 0 0 20%;
+  }
+  #bring .bring .image img {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */

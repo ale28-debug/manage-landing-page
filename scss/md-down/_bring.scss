@@ -1,0 +1,22 @@
+#bring{
+    padding: 0 0 0 30%;
+    margin: 5% 0 0 0;
+
+    .bring{
+        display: flex;
+
+        .caption{
+            p{
+                margin: 0 0 40px 0;
+            }
+        }
+
+        .image{
+            margin: 0 0 0 20%;
+
+            img{
+                width: 60%;
+            }
+        }
+    }
+}
