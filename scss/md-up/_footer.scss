@@ -1,0 +1,33 @@
+footer{
+    padding: 40px;
+
+    .footer-logo{
+        margin: 0 0 50% 0;
+    }
+
+    .social{
+        img{
+            margin: 0 3px;
+        }
+    }
+
+    .link{
+        display: flex;
+        margin: 0 0 0 500px;
+
+        .first,
+        .second{
+            display: flex;
+            flex-direction: column;
+
+            a{
+                margin: 5px 0;
+            }
+        }
+
+        .first{
+            margin: 0 50px 0 0;
+        }
+    }
+}
+

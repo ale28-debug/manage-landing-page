@@ -2,6 +2,13 @@
 General
 *****************************/
 
+
+/*****************************
+
+*****************************/
+
+
+
 html,body{
     padding: 0;
     margin: 0;
@@ -9,6 +16,13 @@ html,body{
 
 body{
     overflow-x: hidden;
+}
+
+.container{
+   display: flex;
+   align-items: center;
+   margin: 0 auto 0 20%;
+  
 }
 
 header{
@@ -36,18 +50,52 @@ header{
     border-radius: 40px;
     text-decoration: none;
     font-weight: 700;
-    box-shadow: 5px 5px 5px $primary-1;
+    box-shadow: 0 8px 8px $primary-1;
 }
 
-h2{
+.one, .two, .three, .four{
+    background: $primary-1;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+
+h2, h4{
     color: $primary-2;
 }
 
-h2, p{
+h2{
+    font-size: 30px;
+}
+
+h2, h4, p{
     font-family: $my-font;
 }
 
 p{
    color: $neutral-1;
    font-size: 16px;
+}
+
+.btn-simplify{
+    background: #fff;
+    color: $primary-1;
+    padding: 25px;
+    height: 0;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    background: $neutral-2;
+
+    .link{
+        .first, .second{
+            a{
+                font-family: $my-font;
+                color: $neutral-4;
+            }
+        }
+    }
 }

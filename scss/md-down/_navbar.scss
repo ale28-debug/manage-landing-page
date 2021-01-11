@@ -1,14 +1,11 @@
 #navbar{
-    position: relative;
 
     header{
         display: flex;
         align-items: center;
         padding: 20px;
-
-        .logo-container{
-            display: flex;
-        }
+        max-width: 970px;
+        margin: 0 auto 0 28%;
     }
 
     ul{
@@ -27,8 +24,8 @@
 
     img:nth-child(2){
         position: absolute;
-        right: -8em;
-        bottom: -30em;
+        right: -12em;
+        bottom: 25em;
         z-index: -2;
     }
 }
