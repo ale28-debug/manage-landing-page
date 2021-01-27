@@ -1,0 +1,22 @@
+#simplify{
+    background: $primary-1;
+    margin: 15% 0 0 0;
+
+    .simplify{
+        display: flex;
+
+        h2{
+            color: #fff;
+            margin: 20px 0 20px 70px;
+        }
+
+        .btn-simplify{
+            display: flex;
+            align-items: center;
+            margin: 40px 10% 0 auto;
+            border-radius: 30px;
+            font-family: $my-font;
+            font-weight: 700;
+        }
+    }
+}

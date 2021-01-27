@@ -28,6 +28,31 @@ footer{
         .first{
             margin: 0 50px 0 0;
         }
+
+        
+
+        
     }
+
+    .info-footer{
+        margin: 0 0 0 230px;
+
+        input{
+            height: 35px;
+            border-radius: 30px;
+            padding: 0 20px;
+            font-family: $my-font;
+            border: none;
+            color: $neutral-4;
+    }
+
+    .btn{
+        height: 15px;
+        border-radius: 20px;
+        box-shadow: 0 0 0;
+        padding: 5px 20px 10px 20px;
+        margin: 0 0 0 10px;
+    }
+     }
 }
 

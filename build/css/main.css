@@ -4,19 +4,22 @@ General
 /*****************************
 
 *****************************/
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   padding: 0;
   margin: 0;
-}
-
-body {
   overflow-x: hidden;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 0 20%;
+body {
+  background: #fff;
+}
+
+.copyright {
+  text-align: center;
 }
 
 header .btn {
@@ -26,6 +29,39 @@ header .btn {
 #navbar ul li a {
   color: #242d52;
   font-family: "Be Vietnam", sans-serif;
+}
+
+.mobile-navigation {
+  display: none;
+  position: absolute;
+  right: 20em;
+  top: 3em;
+  z-index: 2;
+  background: #fff;
+  padding: 40px;
+  margin: 40px auto 0 auto;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.mobile-navigation ul {
+  width: 30%;
+  margin: auto;
+}
+
+.mobile-navigation ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.mobile-navigation ul li a {
+  font: 700 16px "Be Vietnam", sans-serif;
+  color: #242d52;
+  text-decoration: none;
+}
+
+#bring {
+  position: relative;
 }
 
 .btn {
@@ -87,19 +123,22 @@ General
 /*****************************
 
 *****************************/
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   padding: 0;
   margin: 0;
-}
-
-body {
   overflow-x: hidden;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 0 20%;
+body {
+  background: #fff;
+}
+
+.copyright {
+  text-align: center;
 }
 
 header .btn {
@@ -109,6 +148,39 @@ header .btn {
 #navbar ul li a {
   color: #242d52;
   font-family: "Be Vietnam", sans-serif;
+}
+
+.mobile-navigation {
+  display: none;
+  position: absolute;
+  right: 20em;
+  top: 3em;
+  z-index: 2;
+  background: #fff;
+  padding: 40px;
+  margin: 40px auto 0 auto;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.mobile-navigation ul {
+  width: 30%;
+  margin: auto;
+}
+
+.mobile-navigation ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.mobile-navigation ul li a {
+  font: 700 16px "Be Vietnam", sans-serif;
+  color: #242d52;
+  text-decoration: none;
+}
+
+#bring {
+  position: relative;
 }
 
 .btn {
@@ -952,78 +1024,263 @@ footer .link .first a, footer .link .second a {
 }
 
 @media screen and (max-width: 375px) {
-  body {
+  .btn-slider {
     display: none;
   }
-}
-
-@media screen and (min-width: 375px) and (max-width: 1440px) {
+  #navbar {
+    position: relative;
+  }
   #navbar header {
+    padding: 20px;
+  }
+  #navbar .logo-container {
+    float: left;
     display: flex;
     align-items: center;
-    padding: 20px;
-    max-width: 970px;
-    margin: 0 auto 0 28%;
+    height: 40px;
   }
-  #navbar ul {
-    margin: 0 auto 0 auto;
-  }
-  #navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px 0 10px;
-  }
-  #navbar ul li a {
-    text-decoration: none;
+  #navbar ul, #navbar .btn {
+    display: none;
   }
   #navbar img:nth-child(2) {
+    width: 500px;
     position: absolute;
-    right: -12em;
-    bottom: 25em;
+    top: -8em;
+    right: -13em;
     z-index: -2;
   }
+  .mobile-navigation {
+    right: 1em;
+    width: 310px;
+  }
+  .mobile-navigation ul {
+    width: 80%;
+  }
   #bring {
-    padding: 0 0 0 30%;
-    margin: 5% 0 0 0;
+    margin: 100px 0 0 0;
   }
   #bring .bring {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #bring .bring .caption {
+    order: 2;
+    margin: 30px 0 0 0;
+  }
+  #bring .bring .caption h2, #bring .bring .caption p {
+    text-align: center;
   }
   #bring .bring .caption p {
-    margin: 0 0 40px 0;
+    margin: 10px 0 50px 0;
   }
-  #bring .bring .image {
-    margin: 0 0 0 20%;
+  #bring .bring .caption .btn {
+    margin: 0 0 0 25%;
+    padding: 10px 30px;
   }
   #bring .bring .image img {
-    width: 60%;
+    width: 320px;
   }
   #manage {
-    padding: 0 0 0 30%;
-    margin: 15% 0 0 0;
+    margin: 230px 0 0 0;
   }
-  #manage .manage {
-    display: flex;
+  #manage .manage .caption {
+    margin: 0 0 80px 0;
+  }
+  #manage .manage .caption h2, #manage .manage .caption p {
+    text-align: center;
   }
   #manage .manage .image {
     position: relative;
   }
   #manage .manage .image img {
     position: absolute;
-    top: 20em;
-    right: 20em;
+    bottom: 25em;
+    z-index: -2;
+    right: -17em;
+    width: 400px;
   }
-  #manage .manage .articles {
-    margin: 0 0 0 20%;
+  #manage .manage .articles .first, #manage .manage .articles .second, #manage .manage .articles .third {
+    margin: 0 0 80px 0;
   }
-  #manage .manage .articles h4, #manage .manage .articles .one, #manage .manage .articles .two, #manage .manage .articles .three {
-    display: inline;
+  #manage .manage .articles .first h4, #manage .manage .articles .first p:last-child, #manage .manage .articles .second h4, #manage .manage .articles .second p:last-child, #manage .manage .articles .third h4, #manage .manage .articles .third p:last-child {
+    padding: 0 0 0 10px;
   }
-  #manage .manage .articles h4 {
+  .testimonial-slider {
+    background: #ffefeb;
+    margin: 30% 0;
+    padding: 40px;
+  }
+  .testimonial-slider h2 {
+    text-align: center;
+    margin: 0 0 200px 0;
+  }
+  .testimonial-slider .carousel-inner {
+    margin: auto;
+  }
+  .testimonial-slider .carousel-inner h4 {
+    text-align: center;
+  }
+  .testimonial-slider .carousel-inner img {
+    margin: auto;
+    display: block;
+  }
+  .btn-slider {
+    margin: auto;
+    width: 120px;
+    display: block;
+    text-align: center;
+  }
+  #simplify {
+    background: #f25f3a;
+    margin: 40% 0 0 0;
+  }
+  #simplify .simplify {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  #simplify .simplify h2 {
+    color: #fff;
+    margin: 20px 0 20px 70px;
+  }
+  #simplify .simplify .btn-simplify {
+    display: flex;
+    align-items: center;
+    margin: 40px auto 0 auto;
+    border-radius: 30px;
+    font-family: "Be Vietnam", sans-serif;
+    font-weight: 700;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  footer .footer {
+    display: flex;
+    flex-direction: column;
+    order: 3;
+  }
+  footer .footer-logo {
+    margin: 10% auto;
+  }
+  footer .social {
+    width: 420px;
+    margin: 0 auto 20px auto;
+  }
+  footer .social img {
+    margin: 0 5px;
+    width: 15%;
+  }
+  footer .link {
+    display: flex;
+    margin: 0 auto 0 auto;
+  }
+  footer .link .first,
+  footer .link .second {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .link .first a, footer .link .second a {
+    margin: 5px 0;
+  }
+  footer .link .first {
+    margin: 0 50px 0 0;
+  }
+  footer .social,
+  footer .link {
+    width: 300px;
+  }
+  footer .info-footer {
+    margin: 40px auto;
+    order: -1;
+  }
+  footer .info-footer input {
+    height: 50px;
+    border-radius: 30px;
+    padding: 0 10px;
+    font-family: "Be Vietnam", sans-serif;
+    border: none;
+    color: #fafafa;
+  }
+  footer .info-footer .btn {
+    height: 15px;
+    border-radius: 30px;
+    box-shadow: 0 0 0;
+    padding: 10px 40px 15px 40px;
     margin: 0 0 0 10px;
   }
-  #manage .manage .articles p:last-child {
-    margin: 10px 0 20px 50px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  #navbar {
+    position: relative;
+  }
+  #navbar header {
+    padding: 20px;
+  }
+  #navbar .logo-container {
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+  #navbar ul, #navbar .btn {
+    display: none;
+  }
+  #navbar img:nth-child(2) {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: -40em;
+    right: -20em;
+    z-index: -2;
+  }
+  #bring .bring {
+    display: flex;
+    flex-direction: column;
+  }
+  #bring .bring .caption {
+    order: 2;
+    margin: 90px auto 0 auto;
+  }
+  #bring .bring .caption p {
+    margin: 10px 0 50px 0;
+  }
+  #bring .bring .caption .btn {
+    margin: 0 0 0 60px;
+    padding: 10px 30px;
+    box-shadow: 0 0 15px #f25f3a;
+  }
+  #bring .bring .image {
+    margin: 100px auto 0 auto;
+    width: 100%;
+  }
+  #bring .bring .image img {
+    width: 65%;
+    margin: auto;
+    display: block;
+  }
+  #manage .manage {
+    display: flex;
+    flex-direction: column;
+  }
+  #manage .manage .caption {
+    margin: 300px auto 0 auto;
+  }
+  #manage .manage .image {
+    position: relative;
+  }
+  #manage .manage .image img {
+    position: absolute;
+    bottom: 35em;
+    right: -35em;
+    z-index: -2;
+  }
+  #manage .manage .articles {
+    width: 60%;
+    margin: 50px auto 0 auto;
   }
   .testimonial-slider {
     padding: 100px;
@@ -1047,11 +1304,81 @@ footer .link .first a, footer .link .second a {
   }
   .btn-slider {
     margin: auto;
-    width: 90px;
+    width: 120px;
     display: block;
+    text-align: center;
+  }
+  #simplify {
+    background: #f25f3a;
+    margin: 15% 0 0 0;
+  }
+  #simplify .simplify {
+    display: flex;
+  }
+  #simplify .simplify h2 {
+    color: #fff;
+    margin: 20px 0 20px 70px;
+  }
+  #simplify .simplify .btn-simplify {
+    display: flex;
+    align-items: center;
+    margin: 40px 10% 0 auto;
+    border-radius: 30px;
+    font-family: "Be Vietnam", sans-serif;
+    font-weight: 700;
   }
   footer {
+    display: flex;
+    flex-direction: column;
     padding: 40px;
+  }
+  footer .footer-logo {
+    margin: 0 0 5% 0;
+  }
+  footer .social {
+    width: 420px;
+    margin: 0 auto 20px auto;
+  }
+  footer .social img {
+    margin: 0 5px;
+    width: 15%;
+  }
+  footer .link {
+    display: flex;
+    margin: 0 auto 0 auto;
+  }
+  footer .link .first,
+  footer .link .second {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .link .first a, footer .link .second a {
+    margin: 5px 0;
+  }
+  footer .link .first {
+    margin: 0 50px 0 0;
+  }
+  footer .social,
+  footer .link {
+    width: 300px;
+  }
+  footer .info-footer {
+    margin: 40px auto 0 auto;
+  }
+  footer .info-footer input {
+    height: 50px;
+    border-radius: 30px;
+    padding: 0 120px;
+    font-family: "Be Vietnam", sans-serif;
+    border: none;
+    color: #fafafa;
+  }
+  footer .info-footer .btn {
+    height: 15px;
+    border-radius: 30px;
+    box-shadow: 0 0 0;
+    padding: 10px 40px 15px 40px;
+    margin: 0 0 0 10px;
   }
 }
 
@@ -1065,6 +1392,9 @@ footer .link .first a, footer .link .second a {
     padding: 20px;
     max-width: 970px;
     margin: 0 auto 0 28%;
+  }
+  #navbar .hamburger-menu {
+    display: none;
   }
   #navbar ul {
     margin: 0 auto 0 auto;
@@ -1083,6 +1413,9 @@ footer .link .first a, footer .link .second a {
     bottom: -30em;
     z-index: -2;
   }
+  .mobile-navigation {
+    display: none;
+  }
   #bring {
     padding: 0 0 0 30%;
     margin: 5% 0 0 0;
@@ -1148,8 +1481,9 @@ footer .link .first a, footer .link .second a {
   }
   .btn-slider {
     margin: auto;
-    width: 90px;
+    width: 120px;
     display: block;
+    text-align: center;
   }
   #simplify {
     background: #f25f3a;
@@ -1193,6 +1527,24 @@ footer .link .first a, footer .link .second a {
   }
   footer .link .first {
     margin: 0 50px 0 0;
+  }
+  footer .info-footer {
+    margin: 0 0 0 230px;
+  }
+  footer .info-footer input {
+    height: 35px;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-family: "Be Vietnam", sans-serif;
+    border: none;
+    color: #fafafa;
+  }
+  footer .info-footer .btn {
+    height: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 0;
+    padding: 5px 20px 10px 20px;
+    margin: 0 0 0 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

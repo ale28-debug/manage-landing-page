@@ -1,3 +1,7 @@
+.btn-slider{
+    display: none; // Nasconde il btn DOPO il carousel, prima della sezione simplify
+}
+
 #navbar{
     position: relative;
 
@@ -16,11 +20,10 @@
     }
 
     img:nth-child(2){
-       display: none;
-       width: 100%;
+       width: 500px;
        position: absolute;
-       top: -40em;
-       right: -20em;
+       top: -8em;
+       right: -13em;
        z-index: -2;    
     }
 

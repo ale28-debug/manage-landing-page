@@ -1,10 +1,16 @@
 footer{
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
 
     .footer-logo{
-        margin: 0 0 5% 0;
+        margin: 10% auto;
     }
 
     .social{
@@ -43,12 +49,13 @@ footer{
     }
 
     .info-footer{
-        margin: 40px auto 0 auto;
+        margin: 40px auto;
+        order: -1;
 
         input{
             height: 50px;
             border-radius: 30px;
-            padding: 0 120px;
+            padding: 0 10px;
             font-family: $my-font;
             border: none;
             color: $neutral-4;

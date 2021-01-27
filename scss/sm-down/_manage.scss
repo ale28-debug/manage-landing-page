@@ -1,0 +1,35 @@
+#manage{
+    margin: 230px 0 0 0;
+
+    .manage{
+        .caption{
+            margin: 0 0 80px 0;
+
+            h2, p{
+                text-align: center;
+            }
+        }
+
+        .image{
+            position: relative;
+
+            img{
+                position: absolute;
+                bottom: 25em;
+                z-index: -2;
+                right: -17em;
+                width: 400px;
+            }
+        }
+
+        .articles{
+            .first, .second, .third{
+                margin: 0 0 80px 0;
+
+                h4, p:last-child(){
+                    padding: 0 0 0 10px;
+                }
+            }
+        }
+    }
+}
