@@ -117,6 +117,15 @@ footer .link .first a, footer .link .second a {
   color: #fafafa;
 }
 
+footer .info-footer input {
+  color: #000;
+}
+
+footer .info-footer .feedback {
+  color: white;
+  text-align: center;
+}
+
 /*****************************
 General
 *****************************/
@@ -234,6 +243,15 @@ footer {
 footer .link .first a, footer .link .second a {
   font-family: "Be Vietnam", sans-serif;
   color: #fafafa;
+}
+
+footer .info-footer input {
+  color: #000;
+}
+
+footer .info-footer .feedback {
+  color: white;
+  text-align: center;
 }
 
 .container,
@@ -1202,7 +1220,6 @@ footer .link .first a, footer .link .second a {
     padding: 0 10px;
     font-family: "Be Vietnam", sans-serif;
     border: none;
-    color: #fafafa;
   }
   footer .info-footer .btn {
     height: 15px;
@@ -1371,7 +1388,6 @@ footer .link .first a, footer .link .second a {
     padding: 0 120px;
     font-family: "Be Vietnam", sans-serif;
     border: none;
-    color: #fafafa;
   }
   footer .info-footer .btn {
     height: 15px;
@@ -1537,7 +1553,6 @@ footer .link .first a, footer .link .second a {
     padding: 0 20px;
     font-family: "Be Vietnam", sans-serif;
     border: none;
-    color: #fafafa;
   }
   footer .info-footer .btn {
     height: 15px;
